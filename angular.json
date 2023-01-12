@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -115,6 +115,10 @@
           "configurations": {
             "production": {
               "devServerTarget": "angular-8-role-based-authorization-example:serve:production"
+            },
+            "development": { 
+              "devServerTarget": "angular-8-role-based-authorization-example:serve:production"
+            
             }
           }
         }
